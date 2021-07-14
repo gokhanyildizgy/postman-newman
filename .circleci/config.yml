@@ -1,11 +1,11 @@
-version: 2
+version: 2.1
+
+orbs:
+  win: circleci/windows@2.3.0
 
 jobs:
-  build: # name of your job
-    machine:
-      image: windows-default # Windows machine image
-    resource_class: windows.medium
+  build:
+    executor: win/default
     steps:
-      # Commands are run in a Windows virtual machine environment
-        - checkout
-        - run: Write-Host 'Hello, Windows'
+      - checkout
+      - run: echo 'Hello, Windows'
