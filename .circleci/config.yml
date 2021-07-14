@@ -8,4 +8,6 @@ jobs:
       - checkout
       - newman/newman-run:
           collection: C:\Users\Developer\Documents\postman\postman\postman_collection.json
-          environment: C:\Users\Developer\Documents\postman\postman\newman>/New Environment.postman_environment.json
+          environment: C:\Users\Developer\Documents\postman\postman\newman\New Environment.postman_environment.json
+
+          
